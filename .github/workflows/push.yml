@@ -13,5 +13,5 @@ jobs:
           fetch-depth: 1
       - uses: cobraz/actions@v2-dev
         with:
-          cmd: up --yes
+          cmd: version
           token: ${{ secrets.PULUMI_ACCESS_TOKEN }}

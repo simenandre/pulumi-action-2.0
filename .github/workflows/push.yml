@@ -1,0 +1,17 @@
+name: Pulumi
+on:
+  push:
+    branches:
+      - master
+jobs:
+  up:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: cobraz/actions@v2-dev
+        with:
+          cmd: up --yes
+          token: ${{ secrets.PULUMI_ACCESS_TOKEN }}

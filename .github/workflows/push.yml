@@ -11,6 +11,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
+      - run: which node
+      - run: echo $PATH
       - uses: cobraz/actions@v2-dev
         with:
           cmd: version

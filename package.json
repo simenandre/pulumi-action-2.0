@@ -1,9 +1,10 @@
 {
-    "name": "pulumi-test",
-    "main": "index.js",
-    "dependencies": {
-        "@pulumi/pulumi": "^2.0.0",
-        "@pulumi/aws": "^2.0.0",
-        "@pulumi/awsx": "^0.20.0"
-    }
+  "name": "pulumi-test",
+  "repository": "github:simenandre/pulumi-action-2.0",
+  "main": "index.js",
+  "dependencies": {
+    "@pulumi/aws": "^2.0.0",
+    "@pulumi/awsx": "^0.20.0",
+    "@pulumi/pulumi": "^2.0.0"
+  }
 }
